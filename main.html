@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/f3d44a2483.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="grad.css">
+
+
+    <title>Tushar Website</title>
+</head>
+<div id="top">
+    <img class="last" src="profile picccc.png" alt="logo" href="" width="100px" height="100px"
+        style="margin: 20px;border-radius: 50%;border: 5px white solid;">
+    <h1 class="Welcome">Welcome To Tushar's Website</h1>
+</div>
+<nav>
+    <div class="heading" style="width: 100vw; height: 10vh; position:sticky;">
+        <div class="headings" style="display: inline-block;">
+
+            <ul>
+                <!-- <img class="profile" src="../../../../../../Downloads/baji.jpg" alt="prfile.jpg"> -->
+                <a href="#unique">
+                    <li class="Home">Home</li>
+                </a>
+                <span class="vl"></span>
+                <a href="#ab">
+                    <li class="About">About Me</li>
+                </a>
+                <span class="vl"></span>
+                <a href="#co">
+                    <li class="Contact">Contact Me</li>
+                </a>
+                <span class="vl"></span>
+                <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="search" placeholder="Search for Memories..." >
+
+                <span class="login"> 
+                    <!-- <button type="button" class="btn btn-success" style="border-radius:20px;">Login</button> -->
+                    <a href="../../../../../../../../xampp/htdocs/cwh/form.html" target="_blank"><button type="button" class="btn btn-outline-success">Sign Up</button></a>
+                </span>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="progress"
+    style="height: 5px; width: 0%; background-image: linear-gradient(to right,(red , blue)); position: fixed; top: 0;">
+</div>
+<div class="slider">
+    <div class="slideshow-container" style="margin: 0px 0px; margin-bottom: 20px;">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Image4.jpeg" style="width:100vw; height: 99vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="anders-jilden-uwbajDCODj4-unsplash.jpg" style="width:100vw; height: 99vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" style="width:100vw; height: 99vh;">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+</div>
+
+<div class="unique">
+
+    <section id="unique">
+        <h1> Welcome to Tushar's Website</h1>
+        <p id="textss">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus quia numquam quae veniam
+            mollitia quos, dolore quibusdam iure magni excepturi animi, architecto pariatur harum accusamus ipsa earum
+            dolor neque delectus, nesciunt beatae? Placeat voluptate mollitia, maxime illum natus enim modi inventore
+            beatae cum ab et laudantium magnam tenetur nisi. Modi earum commodi similique, ratione obcaecati error
+            maiores, ipsam unde cumque facere odio optio minus illum saepe nostrum corporis provident laboriosam
+            dolorum? Exercitationem veritatis omnis esse, sequi quasi nobis beatae fuga quo. Vel delectus perspiciatis
+            voluptatibus, eos a ex soluta voluptatem. Harum nam, provident quibusdam id nobis sequi iste iure?
+        </p>
+    </section>
+</div>
+
+
+<div class="ab">
+
+    <section id="ab">
+        <h1> About Tushar's Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus quia numquam quae veniam
+            mollitia quos, dolore quibusdam iure magni excepturi animi, architecto pariatur harum accusamus ipsa earum
+            dolor neque delectus, nesciunt beatae? Placeat voluptate mollitia, maxime illum natus enim modi inventore
+            beatae cum ab et laudantium magnam tenetur nisi. Modi earum commodi similique, ratione obcaecati error
+            maiores, ipsam unde cumque facere odio optio minus illum saepe nostrum corporis provident laboriosam
+            dolorum? Exercitationem veritatis omnis esse, sequi quasi nobis beatae fuga quo. Vel delectus perspiciatis
+            voluptatibus, eos a ex soluta voluptatem. Harum nam, provident quibusdam id nobis sequi iste iure?
+        </p>
+    </section>
+</div>
+
+<div class="co">
+
+    <section id="co">
+        <h1> Contact Tushar's Website</h1>
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus quia numquam quae veniam
+            mollitia quos, dolore quibusdam iure magni excepturi animi, architecto pariatur harum accusamus ipsa earum
+            dolor neque delectus, nesciunt beatae? Placeat voluptate mollitia, maxime illum natus enim modi inventore
+            beatae cum ab et laudantium magnam tenetur nisi. Modi earum commodi similique, ratione obcaecati error
+            maiores, ipsam unde cumque facere odio optio minus illum saepe nostrum corporis provident laboriosam
+            dolorum? Exercitationem veritatis omnis esse, sequi quasi nobis beatae fuga quo. Vel delectus perspiciatis
+            voluptatibus, eos a ex soluta voluptatem. Harum nam, provident quibusdam id nobis sequi iste iure?
+        </p>
+    </section>
+</div>
+
+<footer>
+    <div class="footer">
+        <div id="copyright">
+            &copy; Copyright 2022 reserved by Tushar Gupta  </div>
+    </div>
+</footer>
+<div class="loader-wrapper">
+    <div class="vl"></div>
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                ".loader-wrapper").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                ".loader-wrapper").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+</div>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Progress Bar -->
+
+    <script>
+        const scrollProgress = document.getElementById('progress');
+        const height =
+            document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+            scrollProgress.style.width = `${(scrollTop / height) * 100}% `;
+        });
+    </script>
+
+    <!-- <div class="container"> -->
+
+        <!-- <input type="button" onclick="press()" class="press" placeholder="backk">
+            <input type="button" onclick="press()" class="transition">Back To Top Page
+        </div> -->
+
+    <div class="container" onloadeddata="visible()">
+        <div class="inner">
+            <i class="fa-solid fa-arrow-up" id="up" onclick="press()"  style="cursor: pointer; background-color: white;color: blue; width: 30px; height: 30px; border-radius: 50%;position: fixed; bottom: 2vh; right: 2vw; display: flex; justify-content: center; align-items: center; "></i>
+        </div>
+    </div>
+
+    <script>
+        function visible(){
+            var element = document.getElementById('up');
+            if(window.scroll(0,0)){
+                element.style.opacity = '0'
+            }
+            
+        }
+        
+        </script>
+    <script>
+        function press() {
+            //  document.getElementById('Top');
+            window.scrollTo(0, 0);
+        }
+        </script>
+</body>
+
+</html>

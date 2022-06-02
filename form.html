@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="php" href="form.php">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="heading">
+                <center>
+                    <h1>Sign Up</h1>
+                </center>
+            </div>
+            <div class="items">
+                <form onsubmit="validation()" method="post" name="formm">
+                    <ul>
+                        <li>
+                            <label for="name">Name : </label>
+                            <input type="text" name="name"><br>
+                        </li>
+                        <li>
+                            <label for="Email">Email : </label>
+                            <input type="email" name="Email"><br>
+                        <li>
+                            <label for="number">Phone : </label>
+                            <input type="number" name="Phone"><br>
+                        </li>
+                        <li class="pass">
+
+                            <label for="passwod">Password : </label>
+                            <input type="password" name="passwod"><br>
+                        </li>
+                        <li>
+                    </ul>
+                    <div class="sumbit">
+                        <input type="submit" name="sumbit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function validation(){
+            var name = document.formm.name.value;
+            var pass = document.formm.passwod.value;
+
+            if(name == "" || name == "null"){
+                alert("Name can't be empty");
+                return false;
+
+            }
+
+            else if(pass <= 6){
+                alert("Password should be minimum 6 character long");
+                return false;
+            }
+            
+        }
+    </script>
+</body>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, rgb(221, 21, 21), rgb(189, 91, 16), rgb(207, 21, 21));
+    }
+
+    .items {
+        margin: 17px;
+    }
+
+    .items ul li {
+        margin: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+    }
+
+    input {
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: black 2px solid;
+        padding: 4px;
+    }
+
+    .sumbit{
+        background-color: transparent;
+        color: black;
+        border: 2px black solid;
+
+    }
+
+    .container {
+
+        width: 30vw;
+        height: 90vh;
+        background-color: white;
+        margin: auto;
+        padding: 2px;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+
+</html>
